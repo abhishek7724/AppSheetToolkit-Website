@@ -1052,3 +1052,75 @@ details p{
         grid-template-columns:1fr;
     }
 }
+
+
+/* ===== Hero refinements ===== */
+
+.storeButton span strong{
+    display:block;
+    margin-bottom:3px;
+    font-size:15px;
+    line-height:1.15;
+}
+
+.storeButton span small{
+    display:block;
+    margin:0;
+    color:var(--muted);
+    font-size:11px;
+    font-weight:600;
+    letter-spacing:0;
+    text-transform:none;
+}
+
+.compatibilityNote{
+    margin:18px 0 0;
+    color:#44546a;
+    font-size:14px;
+    font-weight:600;
+}
+
+.previewLiveStatus{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    margin-top:14px;
+    color:var(--primary);
+    font-size:12px;
+    font-weight:700;
+}
+
+.liveDot{
+    width:8px;
+    height:8px;
+    border-radius:50%;
+    background:var(--primary);
+    box-shadow:0 0 0 5px rgba(26,115,232,.12);
+    animation:livePulse 1.4s ease-in-out infinite;
+}
+
+.previewProgress div{
+    animation:progressGlow 1.8s ease-in-out infinite;
+}
+
+@keyframes livePulse{
+    0%,100%{
+        opacity:1;
+        transform:scale(1);
+    }
+    50%{
+        opacity:.55;
+        transform:scale(.85);
+    }
+}
+
+@keyframes progressGlow{
+    0%,100%{
+        filter:brightness(1);
+        box-shadow:0 0 0 rgba(26,115,232,0);
+    }
+    50%{
+        filter:brightness(1.12);
+        box-shadow:0 0 12px rgba(26,115,232,.35);
+    }
+}
