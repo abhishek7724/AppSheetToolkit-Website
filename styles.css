@@ -836,27 +836,11 @@ details p{
 }
 
 .storeLogo{
-    width:35px;
-    height:35px;
+    width:38px;
+    height:38px;
     flex:none;
-    display:grid;
-    place-items:center;
-    border-radius:50%;
-    font-weight:900;
-}
-
-.chromeLogo{
-    background:
-        radial-gradient(circle at 50% 50%,#fff 0 22%,#4285f4 23% 36%,transparent 37%),
-        conic-gradient(#ea4335 0 33%,#fbbc05 33% 66%,#34a853 66% 100%);
-}
-
-.edgeLogo{
-    background:linear-gradient(145deg,#0bd6c3,#0877ed 60%,#073b8c);
-    color:#fff;
-    font-family:Georgia,serif;
-    font-size:25px;
-    font-style:italic;
+    object-fit:contain;
+    display:block;
 }
 
 .useCasesSection{
