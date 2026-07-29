@@ -1,7 +1,111 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Support and feedback for AppSheet Toolkit."><meta name="theme-color" content="#0b5ed7"><link rel="icon" href="assets/favicon.png"><link rel="stylesheet" href="styles.css"><script src="script.js" defer></script><title>Support & Feedback — AppSheet Toolkit</title></head><body>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Support and feedback for AppSheet Toolkit."><meta name="theme-color" content="#0b5ed7"><link rel="icon" href="assets/favicon.png"><link rel="stylesheet" href="styles.css"><script src="script.js" defer></script><title>Support & Feedback — AppSheet Toolkit</title>
+<style>
+.support-form-section{display:grid;grid-template-columns:minmax(0,.78fr) minmax(0,1.22fr);gap:56px;align-items:start;margin-top:56px;padding:44px;border:1px solid rgba(15,46,92,.12);border-radius:24px;background:radial-gradient(circle at 95% 5%,rgba(11,94,215,.10),transparent 30%),#fff;box-shadow:0 20px 55px rgba(15,46,92,.09)}
+.support-form-intro h2{margin:0;font-size:clamp(2rem,4vw,2.75rem);line-height:1.12;letter-spacing:-.03em}
+.support-form-intro p:last-child{margin:16px 0 0;color:#64748b}
+.support-form{display:grid;gap:20px}
+.support-form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.support-form label{display:grid;gap:7px;color:#172033;font-size:.9rem;font-weight:700}
+.support-form label strong{color:#d93025}
+.support-form input,.support-form select,.support-form textarea{width:100%;padding:13px 14px;border:1px solid #d9e2ef;border-radius:11px;background:#fff;color:#172033;font:inherit;font-weight:400;outline:none;transition:border-color .18s ease,box-shadow .18s ease,background .18s ease}
+.support-form input::placeholder,.support-form textarea::placeholder{color:#94a3b8}
+.support-form input:focus,.support-form select:focus,.support-form textarea:focus{border-color:#0b5ed7;box-shadow:0 0 0 4px rgba(11,94,215,.12);background:#fbfdff}
+.support-form textarea{min-height:150px;resize:vertical}
+.support-form-footer{display:flex;align-items:center;gap:18px}
+.support-form-footer button{min-width:170px}
+.support-form-footer button:disabled{cursor:not-allowed;opacity:.65}
+.support-form-status{margin:0;font-size:.9rem;font-weight:700}
+.support-form-status.success{color:#188038}
+.support-form-status.error{color:#d93025}
+@media (max-width:900px){.support-form-section{grid-template-columns:1fr;gap:34px}}
+@media (max-width:640px){.support-form-section{margin-top:40px;padding:26px 20px}.support-form-grid{grid-template-columns:1fr}.support-form-footer{align-items:stretch;flex-direction:column}.support-form-footer button{width:100%}}
+</style>
+</head><body>
 <header class="site-header" data-header><div class="shell nav-wrap"><a class="brand" href="index.html"><img src="assets/appsheet-toolkit-icon.png" alt="" width="42" height="42"><span>AppSheet Toolkit</span></a><button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav" data-menu-button><span></span><span></span><span></span><span class="sr-only">Open menu</span></button><nav class="site-nav" id="site-nav" data-menu><a href="index.html">Home</a><a href="index.html#features">Features</a><a href="privacy.html">Privacy</a><a href="support.html">Support</a></nav></div></header>
 <main><section class="page-hero"><div class="shell"><p class="eyebrow">Help and support</p><h1>How can we help?</h1><p>Find common troubleshooting steps or send a support request, bug report, feature idea, or general feedback.</p></div></section>
 <section class="content-page"><div class="shell"><div class="support-grid"><article class="support-card reveal"><div class="feature-icon">↻</div><h2>Extension not detecting AppSheet</h2><p>Confirm that you are on an AppSheet editor page. After installing or reloading the extension, refresh the AppSheet tab before opening the toolkit.</p></article><article class="support-card reveal"><div class="feature-icon green">↓</div><h2>Export did not download</h2><p>Check the browser's download permissions and confirm that at least one table and output format are selected.</p></article><article class="support-card reveal"><div class="feature-icon amber">◔</div><h2>Progress stopped</h2><p>Keep the AppSheet editor tab open during extraction and avoid manually changing tables while the extension is running.</p></article><article class="support-card reveal"><div class="feature-icon violet">✉</div><h2>Report a problem</h2><p>Include your browser version, the AppSheet screen being used, and a screenshot of any visible error.</p></article></div>
-<div class="support-cta reveal"><div><p class="eyebrow">Support & Feedback</p><h2>Need additional help or have an idea?</h2><p>Use the form to report a bug, request a feature, ask a question, or share feedback. Do not include passwords, confidential business data, or private application metadata.</p></div><a class="button button-primary" href="https://forms.gle/qXSfdKcxUcsQawx48" target="_blank" rel="noopener noreferrer">Submit Support Request</a></div>
+
+<div class="support-form-section reveal">
+  <div class="support-form-intro">
+    <p class="eyebrow">Support &amp; Feedback</p>
+    <h2>Tell us how we can help</h2>
+    <p>Report a bug, request a feature, ask a question, or share feedback. Do not include passwords, confidential business data, or private application metadata.</p>
+  </div>
+
+  <form id="supportForm" class="support-form" novalidate>
+    <div class="support-form-grid">
+      <label><span>Name</span><input type="text" id="name" name="name" maxlength="100" autocomplete="name" placeholder="Your name"></label>
+      <label><span>Email <strong>*</strong></span><input type="email" id="email" name="email" maxlength="150" autocomplete="email" placeholder="you@example.com" required></label>
+      <label><span>Browser</span><select id="browser" name="browser"><option value="">Select browser</option><option value="Google Chrome">Google Chrome</option><option value="Microsoft Edge">Microsoft Edge</option><option value="Brave">Brave</option><option value="Other">Other</option></select></label>
+      <label><span>Extension version</span><input type="text" id="extensionVersion" name="extensionVersion" maxlength="30" placeholder="Example: 1.0.0"></label>
+    </div>
+
+    <label><span>Request type <strong>*</strong></span><select id="requestType" name="requestType" required><option value="">Select request type</option><option value="Bug Report">Bug Report</option><option value="Feature Request">Feature Request</option><option value="Question">Question</option><option value="General Feedback">General Feedback</option></select></label>
+
+    <label><span>Message <strong>*</strong></span><textarea id="message" name="message" rows="7" maxlength="3000" required placeholder="Describe the issue, expected result, or feature idea."></textarea></label>
+
+    <div class="support-form-footer">
+      <button type="submit" id="submitButton" class="button button-primary">Submit Request</button>
+      <p id="formStatus" class="support-form-status" role="status" aria-live="polite"></p>
+    </div>
+  </form>
+</div>
+
 <div class="faq-layout section"><div class="section-heading reveal"><p class="eyebrow">FAQ</p><h2>Frequently asked questions</h2></div><div class="faq-list"><details class="reveal"><summary>Does AppSheet Toolkit collect my data?</summary><p>No. The extension does not use analytics, tracking, or an external data-storage server.</p></details><details class="reveal"><summary>Where are exported files saved?</summary><p>Files are saved according to your browser's normal download settings.</p></details><details class="reveal"><summary>Can I export only selected tables?</summary><p>Yes. Select individual tables or use the All Tables option.</p></details><details class="reveal"><summary>Can I export JSON and CSV together?</summary><p>Yes. Choose Both before starting extraction.</p></details><details class="reveal"><summary>Is this an official Google product?</summary><p>No. AppSheet Toolkit is an independent third-party extension and is not affiliated with or endorsed by Google.</p></details></div></div></div></section></main>
-<footer class="footer"><div class="shell footer-main"><div class="footer-brand"><a class="brand" href="index.html"><img src="assets/appsheet-toolkit-icon.png" alt="" width="42" height="42"><span>AppSheet Toolkit</span></a><p>A lightweight metadata export tool for AppSheet developers.</p></div><div class="footer-links"><div><strong>Product</strong><a href="index.html#features">Features</a><a href="index.html#roadmap">Roadmap</a></div><div><strong>Resources</strong><a href="support.html">Support</a><a href="privacy.html">Privacy</a></div><div><strong>Install</strong><a href="https://chromewebstore.google.com/detail/mdbiahphbngmmjmggekiccggefpjablj?utm_source=item-share-cb" target="_blank" rel="noopener noreferrer">Chrome</a><a href="https://microsoftedge.microsoft.com/addons/search/AppSheet%20Toolkit" target="_blank" rel="noopener noreferrer">Edge</a></div></div></div><div class="shell footer-bottom"><p>© 2026 Abhishek Sinha.</p><p>Independent and not affiliated with or endorsed by Google.</p></div></footer></body></html>
+<footer class="footer"><div class="shell footer-main"><div class="footer-brand"><a class="brand" href="index.html"><img src="assets/appsheet-toolkit-icon.png" alt="" width="42" height="42"><span>AppSheet Toolkit</span></a><p>A lightweight metadata export tool for AppSheet developers.</p></div><div class="footer-links"><div><strong>Product</strong><a href="index.html#features">Features</a><a href="index.html#roadmap">Roadmap</a></div><div><strong>Resources</strong><a href="support.html">Support</a><a href="privacy.html">Privacy</a></div><div><strong>Install</strong><a href="https://chromewebstore.google.com/detail/mdbiahphbngmmjmggekiccggefpjablj?utm_source=item-share-cb" target="_blank" rel="noopener noreferrer">Chrome</a><a href="https://microsoftedge.microsoft.com/addons/search/AppSheet%20Toolkit" target="_blank" rel="noopener noreferrer">Edge</a></div></div></div><div class="shell footer-bottom"><p>© 2026 Abhishek Sinha.</p><p>Independent and not affiliated with or endorsed by Google.</p></div></footer>
+<script>
+(() => {
+  const SUPPORT_API_URL = "https://script.google.com/macros/s/AKfycbxqVL1KfVZTbfGHdUpxW7a05rPg8tgUGQpA75XaWvpBqnHYHaL1VWWXt0Vd_79C3IjP/exec";
+  const form = document.getElementById("supportForm");
+  const submitButton = document.getElementById("submitButton");
+  const formStatus = document.getElementById("formStatus");
+  if (!form || !submitButton || !formStatus) return;
+
+  form.addEventListener("submit", async (event) => {
+    event.preventDefault();
+    if (!form.checkValidity()) {
+      form.reportValidity();
+      return;
+    }
+
+    submitButton.disabled = true;
+    submitButton.textContent = "Submitting...";
+    formStatus.className = "support-form-status";
+    formStatus.textContent = "";
+
+    const payload = {
+      name: document.getElementById("name").value.trim(),
+      email: document.getElementById("email").value.trim(),
+      browser: document.getElementById("browser").value,
+      extensionVersion: document.getElementById("extensionVersion").value.trim(),
+      requestType: document.getElementById("requestType").value,
+      message: document.getElementById("message").value.trim()
+    };
+
+    try {
+      const response = await fetch(SUPPORT_API_URL, {
+        method: "POST",
+        headers: {"Content-Type": "text/plain;charset=utf-8"},
+        body: JSON.stringify(payload)
+      });
+
+      const result = await response.json();
+      if (!response.ok || !result.success) {
+        throw new Error(result.message || "Unable to submit the request.");
+      }
+
+      formStatus.className = "support-form-status success";
+      formStatus.textContent = `Submitted successfully. Ticket ID: ${result.ticketId}`;
+      form.reset();
+    } catch (error) {
+      console.error("Support form submission failed:", error);
+      formStatus.className = "support-form-status error";
+      formStatus.textContent = "Submission failed. Please try again in a moment.";
+    } finally {
+      submitButton.disabled = false;
+      submitButton.textContent = "Submit Request";
+    }
+  });
+})();
+</script>
+</body></html>
