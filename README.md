@@ -2,16 +2,20 @@
 
 Official public website for AppSheet Toolkit.
 
-## Includes
+## Live site
+
+https://abhishek7724.github.io/AppSheetToolkit-Website/
+
+## Included
 
 - Product landing page
-- Chrome and Microsoft Edge installation links
-- Feature overview
-- Workflow and use cases
-- Product roadmap
+- Chrome and Edge install links
+- Feature and use-case sections
+- Real product screenshot
+- Roadmap and FAQ
 - Privacy Policy
 - Support and feedback form
 
-## Live website
+## Local preview
 
-https://abhishek7724.github.io/AppSheetToolkit-Website/
+Open `index.html` directly or run a small local server.

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://abhishek7724.github.io/AppSheetToolkit-Website/sitemap.xml
