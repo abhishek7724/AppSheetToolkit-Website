@@ -1,11 +1,17 @@
 # AppSheet Toolkit Website
 
-Official website for AppSheet Toolkit.
+Official public website for AppSheet Toolkit.
 
-Includes:
+## Includes
+
 - Product landing page
+- Chrome and Microsoft Edge installation links
+- Feature overview
+- Workflow and use cases
+- Product roadmap
 - Privacy Policy
-- Support page
+- Support and feedback form
 
-Website:
+## Live website
+
 https://abhishek7724.github.io/AppSheetToolkit-Website/
