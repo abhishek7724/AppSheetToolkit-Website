@@ -18,3 +18,33 @@
   }, {threshold:.12});
   reveals.forEach((el,i) => { el.style.transitionDelay = `${Math.min((i%4)*55,165)}ms`; observer.observe(el); });
 })();
+
+/* Product tour tabs */
+(() => {
+  const tour = document.querySelector('[data-tour]');
+  if (!tour) return;
+  const tabs = [...tour.querySelectorAll('.tour-tab')];
+  const slides = [...tour.querySelectorAll('.tour-slide')];
+  const show = i => {
+    tabs.forEach((tab, n) => {
+      const on = n === i;
+      tab.classList.toggle('is-active', on);
+      tab.setAttribute('aria-selected', String(on));
+      tab.tabIndex = on ? 0 : -1;
+    });
+    slides.forEach((slide, n) => {
+      slide.hidden = n !== i;
+      slide.classList.toggle('is-active', n === i);
+    });
+  };
+  tabs.forEach((tab, i) => {
+    tab.addEventListener('click', () => show(i));
+    tab.addEventListener('keydown', e => {
+      const step = e.key === 'ArrowRight' ? 1 : e.key === 'ArrowLeft' ? -1 : 0;
+      if (!step) return;
+      e.preventDefault();
+      const next = (i + step + tabs.length) % tabs.length;
+      show(next); tabs[next].focus();
+    });
+  });
+})();

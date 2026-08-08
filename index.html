@@ -3,12 +3,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Export AppSheet table and column metadata to JSON and CSV for documentation, analysis, backup, and AI workflows.">
+  <meta name="description" content="Export AppSheet tables, slices, and views to JSON and CSV for documentation, analysis, migration, and AI workflows. Free, private, and runs entirely in your browser.">
   <meta name="theme-color" content="#0b5ed7">
   <meta property="og:type" content="website">
   <meta property="og:title" content="AppSheet Toolkit — Export metadata in seconds">
-  <meta property="og:description" content="A privacy-first browser extension that exports AppSheet metadata to JSON and CSV.">
+  <meta property="og:description" content="Export AppSheet tables, slices, and views to JSON and CSV. Private by design — nothing leaves your computer.">
   <meta property="og:image" content="https://abhishek7724.github.io/AppSheetToolkit-Website/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
   <meta property="og:url" content="https://abhishek7724.github.io/AppSheetToolkit-Website/">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="canonical" href="https://abhishek7724.github.io/AppSheetToolkit-Website/">
@@ -33,6 +35,7 @@
 
       <nav class="site-nav" id="site-nav" data-menu>
         <a href="#features">Features</a>
+        <a href="#tour">Tour</a>
         <a href="#workflow">How it works</a>
         <a href="#roadmap">Roadmap</a>
         <a href="privacy.html">Privacy</a>
@@ -52,7 +55,7 @@
           <div class="availability"><span></span>Available for Chrome and Microsoft Edge</div>
           <p class="eyebrow">Browser extension for AppSheet developers</p>
           <h1>Export AppSheet metadata <em>in seconds.</em></h1>
-          <p class="lead">Generate clean JSON and CSV exports from AppSheet tables for documentation, analysis, backup, and AI-assisted development.</p>
+          <p class="lead">Turn your tables, slices, and views into clean JSON and CSV files — for documentation, analysis, migration, and AI-assisted development.</p>
 
           <div class="store-buttons">
             <a class="store-button" href="https://chromewebstore.google.com/detail/mdbiahphbngmmjmggekiccggefpjablj?utm_source=item-share-cb" target="_blank" rel="noopener noreferrer">
@@ -90,8 +93,8 @@
     <section class="outcome-bar" aria-label="Product highlights">
       <div class="shell outcome-grid">
         <div><strong>One click</strong><span>Start extraction</span></div>
+        <div><strong>Three layers</strong><span>Tables, slices, views</span></div>
         <div><strong>Two formats</strong><span>JSON, CSV, or both</span></div>
-        <div><strong>Selective</strong><span>Choose required tables</span></div>
         <div><strong>Private</strong><span>Files stay on your device</span></div>
       </div>
     </section>
@@ -101,16 +104,59 @@
         <div class="section-heading centered reveal">
           <p class="eyebrow">Built for AppSheet developers</p>
           <h2>Less manual review. More usable metadata.</h2>
-          <p>Capture application structure without opening and documenting every column manually.</p>
+          <p>Capture your application structure without opening and documenting every column, slice, and view by hand.</p>
         </div>
 
         <div class="feature-grid">
-          <article class="feature-card reveal"><div class="feature-icon">{ }</div><h3>Structured JSON</h3><p>Generate machine-readable metadata for documentation, automation, analysis, and AI workflows.</p></article>
-          <article class="feature-card reveal"><div class="feature-icon green">CSV</div><h3>Spreadsheet-ready CSV</h3><p>Review column settings in Excel or share a clean flat file with project teams.</p></article>
-          <article class="feature-card reveal"><div class="feature-icon violet">✓</div><h3>Selective table export</h3><p>Export every table or choose only the tables relevant to your current task.</p></article>
-          <article class="feature-card reveal"><div class="feature-icon amber">◔</div><h3>Live progress</h3><p>See the current table and column while extraction is running.</p></article>
-          <article class="feature-card reveal"><div class="feature-icon rose">×</div><h3>Safe cancellation</h3><p>Stop extraction when it is no longer required without restarting the browser.</p></article>
-          <article class="feature-card reveal"><div class="feature-icon teal">⌂</div><h3>Privacy-first</h3><p>Metadata is processed locally and is not uploaded to a server operated by AppSheet Toolkit.</p></article>
+          <article class="feature-card reveal"><div class="feature-icon">▦</div><h3>Tables and columns</h3><p>Every table with all of its columns and their full configuration, exactly as set up in the editor.</p></article>
+          <article class="feature-card reveal"><div class="feature-icon violet">◧</div><h3>Slices</h3><p>Every slice with its columns, row conditions, update modes, and actions.</p></article>
+          <article class="feature-card reveal"><div class="feature-icon green">◱</div><h3>Views <span class="tag-new">New</span></h3><p>Every view in the application, with the option to include system generated views.</p></article>
+          <article class="feature-card reveal"><div class="feature-icon">{ }</div><h3>JSON and CSV</h3><p>Choose one format or export both at once. JSON for tooling and AI, CSV for spreadsheets and review.</p></article>
+          <article class="feature-card reveal"><div class="feature-icon amber">◔</div><h3>Selective export with live progress</h3><p>Pick only the tables you need and watch the current table and column while extraction runs.</p></article>
+          <article class="feature-card reveal"><div class="feature-icon rose">×</div><h3>Cancel any time</h3><p>Stop mid-run and nothing partial is written. Files are only created once the full run finishes.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section tour-section" id="tour">
+      <div class="shell">
+        <div class="section-heading centered reveal">
+          <p class="eyebrow">A closer look</p>
+          <h2>Everything the toolkit does, at a glance.</h2>
+          <p>Five things worth knowing before you install.</p>
+        </div>
+
+        <div class="tour reveal" data-tour>
+          <div class="tour-tabs" role="tablist" aria-label="Product tour">
+            <button class="tour-tab is-active" role="tab" type="button" id="tour-tab-0" aria-controls="tour-panel-0" aria-selected="true">Overview</button>
+            <button class="tour-tab" role="tab" type="button" id="tour-tab-1" aria-controls="tour-panel-1" aria-selected="false" tabindex="-1">What it exports</button>
+            <button class="tour-tab" role="tab" type="button" id="tour-tab-2" aria-controls="tour-panel-2" aria-selected="false" tabindex="-1">Formats</button>
+            <button class="tour-tab" role="tab" type="button" id="tour-tab-3" aria-controls="tour-panel-3" aria-selected="false" tabindex="-1">Control</button>
+            <button class="tour-tab" role="tab" type="button" id="tour-tab-4" aria-controls="tour-panel-4" aria-selected="false" tabindex="-1">Privacy</button>
+          </div>
+
+          <div class="tour-stage">
+            <figure class="tour-slide is-active" role="tabpanel" id="tour-panel-0" aria-labelledby="tour-tab-0">
+              <img src="assets/shots/01-overview.webp" alt="AppSheet Toolkit overview: open your app, click Extract, get ready-to-use files" width="1280" height="800">
+              <figcaption>Open your app, click Extract, and get ready-to-use files.</figcaption>
+            </figure>
+            <figure class="tour-slide" role="tabpanel" id="tour-panel-1" aria-labelledby="tour-tab-1" hidden>
+              <img src="assets/shots/02-exports.webp" alt="Tables, slices and views are all extracted in a single run" width="1280" height="800" loading="lazy">
+              <figcaption>Tables, slices, and views — captured in a single run.</figcaption>
+            </figure>
+            <figure class="tour-slide" role="tabpanel" id="tour-panel-2" aria-labelledby="tour-tab-2" hidden>
+              <img src="assets/shots/03-formats.webp" alt="Choose JSON, CSV or both and the files are saved to your Downloads folder" width="1280" height="800" loading="lazy">
+              <figcaption>Pick JSON, CSV, or both. Files land in your Downloads folder.</figcaption>
+            </figure>
+            <figure class="tour-slide" role="tabpanel" id="tour-panel-3" aria-labelledby="tour-tab-3" hidden>
+              <img src="assets/shots/04-control.webp" alt="Select only the tables you need and follow live progress with a cancel option" width="1280" height="800" loading="lazy">
+              <figcaption>Select what you need, follow every step, stop whenever you like.</figcaption>
+            </figure>
+            <figure class="tour-slide" role="tabpanel" id="tour-panel-4" aria-labelledby="tour-tab-4" hidden>
+              <img src="assets/shots/05-privacy.webp" alt="Private by design: nothing is uploaded, no tracking, no external servers" width="1280" height="800" loading="lazy">
+              <figcaption>Nothing is uploaded. No tracking. No external servers.</figcaption>
+            </figure>
+          </div>
         </div>
       </div>
     </section>
@@ -124,8 +170,8 @@
         </div>
         <div class="usecase-list">
           <article class="reveal"><span>01</span><div><h3>Documentation</h3><p>Create a reliable starting point for technical and project documentation.</p></div></article>
-          <article class="reveal"><span>02</span><div><h3>Application analysis</h3><p>Review column types, formulas, settings, and table structure at a glance.</p></div></article>
-          <article class="reveal"><span>03</span><div><h3>Metadata backup</h3><p>Keep a readable snapshot of application configuration for future reference.</p></div></article>
+          <article class="reveal"><span>02</span><div><h3>Application analysis</h3><p>Review column types, formulas, slice conditions, and view configuration at a glance.</p></div></article>
+          <article class="reveal"><span>03</span><div><h3>Migration and handover</h3><p>Hand a complete picture of an application to another developer, team, or client.</p></div></article>
           <article class="reveal"><span>04</span><div><h3>AI-assisted development</h3><p>Give AI tools structured context without manually copying every configuration.</p></div></article>
         </div>
       </div>
@@ -135,10 +181,10 @@
       <div class="shell">
         <div class="section-heading centered reveal"><p class="eyebrow">Simple workflow</p><h2>From AppSheet editor to export in four steps.</h2></div>
         <div class="step-grid">
-          <article class="step-card reveal"><span>1</span><h3>Open Data → Columns</h3><p>Open the AppSheet application whose metadata you want to export.</p></article>
-          <article class="step-card reveal"><span>2</span><h3>Select tables</h3><p>Choose all tables or only the tables needed for your current task.</p></article>
-          <article class="step-card reveal"><span>3</span><h3>Choose a format</h3><p>Select JSON, CSV, or both and begin extraction.</p></article>
-          <article class="step-card reveal"><span>4</span><h3>Use the output</h3><p>Open the files in Excel, a text editor, documentation, or an AI workflow.</p></article>
+          <article class="step-card reveal"><span>1</span><h3>Open your app</h3><p>Open the AppSheet application whose metadata you want to export, then open the toolkit side panel.</p></article>
+          <article class="step-card reveal"><span>2</span><h3>Choose what to export</h3><p>Pick individual tables, or check All Slices and All Views. You do not need to open those screens yourself.</p></article>
+          <article class="step-card reveal"><span>3</span><h3>Choose a format</h3><p>Select JSON, CSV, or both, then start extraction and follow the live progress.</p></article>
+          <article class="step-card reveal"><span>4</span><h3>Use the output</h3><p>Open the files in Excel, a text editor, your documentation, or an AI workflow.</p></article>
         </div>
       </div>
     </section>
@@ -147,7 +193,7 @@
       <div class="shell">
         <div class="showcase-heading reveal">
           <div><p class="eyebrow">Works where you work</p><h2>Export directly from the AppSheet editor.</h2></div>
-          <p>Choose tables, follow live progress, and download the result without leaving the application configuration screen.</p>
+          <p>Choose what to export, follow live progress, and download the result without leaving the application configuration screen.</p>
         </div>
         <figure class="showcase-frame reveal">
           <div class="showcase-topbar"><span></span><span></span><span></span><b>AppSheet Toolkit in action</b></div>
@@ -159,7 +205,7 @@
     <section class="section founder-section">
       <div class="shell founder-card reveal">
         <img src="assets/appsheet-toolkit-icon.png" alt="AppSheet Toolkit icon" width="116" height="116">
-        <div><p class="eyebrow">Built from a real developer pain point</p><h2>Built by an AppSheet developer, for AppSheet developers.</h2><p>AppSheet Toolkit was created to remove the repetitive work of reviewing and copying table metadata one column at a time. It focuses on a simple outcome: make application configuration easier to document, analyze, and reuse.</p></div>
+        <div><p class="eyebrow">Built from a real developer pain point</p><h2>Built by an AppSheet developer, for AppSheet developers.</h2><p>AppSheet Toolkit was created to remove the repetitive work of reviewing and copying application metadata one column at a time. It focuses on a simple outcome: make application configuration easier to document, analyze, and reuse.</p></div>
       </div>
     </section>
 
@@ -167,8 +213,8 @@
       <div class="shell roadmap-card reveal">
         <div class="roadmap-copy"><p class="eyebrow">Product roadmap</p><h2>Starting with export. Growing into a deeper developer toolkit.</h2><p>Future capabilities will be shaped by real feedback from AppSheet developers and consultants.</p><a class="text-link" href="support.html">Share a feature request →</a></div>
         <div class="roadmap-columns">
-          <div class="roadmap-column current"><span>Available now · v1.0</span><ul><li>JSON export</li><li>CSV export</li><li>Selective table export</li><li>Progress tracking</li><li>Cancel extraction</li></ul></div>
-          <div class="roadmap-column future"><span>Under consideration</span><ul><li>Schema comparison</li><li>Dependency mapping</li><li>AI documentation</li><li>Application analysis</li><li>Expression exploration</li></ul></div>
+          <div class="roadmap-column current"><span>Available now · v1.5.1</span><ul><li>Table and column export</li><li>Slice export</li><li>View export</li><li>JSON, CSV, or both</li><li>Selective table export</li><li>Live progress tracking</li><li>Cancel with no partial files</li></ul></div>
+          <div class="roadmap-column future"><span>Under consideration</span><ul><li>Action and automation export</li><li>Schema comparison</li><li>Dependency mapping</li><li>AI documentation</li><li>Expression exploration</li></ul></div>
         </div>
       </div>
     </section>
@@ -176,7 +222,7 @@
     <section class="section privacy-block">
       <div class="shell privacy-card reveal">
         <div class="shield">✓</div>
-        <div><p class="eyebrow">Privacy first</p><h2>Your metadata remains on your computer.</h2><p>No advertising, analytics, tracking, user accounts, or external metadata storage.</p></div>
+        <div><p class="eyebrow">Privacy first</p><h2>Your metadata remains on your computer.</h2><p>No advertising, analytics, tracking, user accounts, or external metadata storage. The extension only reads the AppSheet editor when you start an extraction.</p></div>
         <a class="button button-secondary" href="privacy.html">Read Privacy Policy</a>
       </div>
     </section>
@@ -186,8 +232,10 @@
         <div class="section-heading reveal"><p class="eyebrow">FAQ</p><h2>Questions before installing?</h2><p>The essentials, without the fine print.</p></div>
         <div class="faq-list">
           <details class="reveal"><summary>Does AppSheet Toolkit collect my data?</summary><p>No. The extension does not use analytics, tracking, or an external data-storage server.</p></details>
-          <details class="reveal"><summary>Can I export only selected tables?</summary><p>Yes. Select individual tables or use the All Tables option.</p></details>
+          <details class="reveal"><summary>Can I export slices and views too?</summary><p>Yes. Check All Slices or All Views alongside your table selection, and everything is exported in the same run.</p></details>
+          <details class="reveal"><summary>Do I need to open the Views screen first?</summary><p>No. The toolkit switches the editor to the screens it needs and puts it back when it is finished.</p></details>
           <details class="reveal"><summary>Can I export JSON and CSV together?</summary><p>Yes. Choose Both before starting extraction.</p></details>
+          <details class="reveal"><summary>What happens if I cancel halfway?</summary><p>Nothing is written. Files are only created once a full run completes, so a cancelled run never leaves a partial export behind.</p></details>
           <details class="reveal"><summary>Is this an official Google product?</summary><p>No. AppSheet Toolkit is an independent third-party extension and is not affiliated with or endorsed by Google.</p></details>
         </div>
       </div>
@@ -196,7 +244,7 @@
     <section class="final-cta">
       <div class="cta-grid" aria-hidden="true"></div>
       <div class="shell final-cta-inner reveal">
-        <div><p class="eyebrow light">Free browser extension</p><h2>Stop documenting AppSheet columns manually.</h2><p>Turn application metadata into usable files in a few clicks.</p></div>
+        <div><p class="eyebrow light">Free browser extension</p><h2>Stop documenting AppSheet apps by hand.</h2><p>Turn tables, slices, and views into usable files in a few clicks.</p></div>
         <div class="cta-actions"><a class="button button-light" href="https://chromewebstore.google.com/detail/mdbiahphbngmmjmggekiccggefpjablj?utm_source=item-share-cb" target="_blank" rel="noopener noreferrer">Install for Chrome</a><a class="button button-outline" href="support.html">Support & Feedback</a></div>
       </div>
     </section>
@@ -205,7 +253,7 @@
   <footer class="footer">
     <div class="shell footer-main">
       <div class="footer-brand"><a class="brand" href="index.html"><img src="assets/appsheet-toolkit-icon.png" alt="" width="42" height="42"><span>AppSheet Toolkit</span></a><p>A lightweight metadata export tool for AppSheet developers.</p><small>Built by Abhishek Sinha</small></div>
-      <div class="footer-links"><div><strong>Product</strong><a href="#features">Features</a><a href="#workflow">How it works</a><a href="#roadmap">Roadmap</a></div><div><strong>Resources</strong><a href="support.html">Support & Feedback</a><a href="privacy.html">Privacy Policy</a></div><div><strong>Install</strong><a href="https://chromewebstore.google.com/detail/mdbiahphbngmmjmggekiccggefpjablj?utm_source=item-share-cb" target="_blank" rel="noopener noreferrer">Chrome Web Store</a><a href="https://microsoftedge.microsoft.com/addons/search/AppSheet%20Toolkit" target="_blank" rel="noopener noreferrer">Microsoft Edge</a></div></div>
+      <div class="footer-links"><div><strong>Product</strong><a href="#features">Features</a><a href="#tour">Tour</a><a href="#workflow">How it works</a><a href="#roadmap">Roadmap</a></div><div><strong>Resources</strong><a href="support.html">Support & Feedback</a><a href="privacy.html">Privacy Policy</a></div><div><strong>Install</strong><a href="https://chromewebstore.google.com/detail/mdbiahphbngmmjmggekiccggefpjablj?utm_source=item-share-cb" target="_blank" rel="noopener noreferrer">Chrome Web Store</a><a href="https://microsoftedge.microsoft.com/addons/search/AppSheet%20Toolkit" target="_blank" rel="noopener noreferrer">Microsoft Edge</a></div></div>
     </div>
     <div class="shell footer-bottom"><p>© 2026 Abhishek Sinha. All rights reserved.</p><p>AppSheet Toolkit is independent and is not affiliated with or endorsed by Google.</p></div>
   </footer>
