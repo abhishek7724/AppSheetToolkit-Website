@@ -4,16 +4,16 @@ Official public website for AppSheet Toolkit.
 
 ## Live site
 
-https://abhishek7724.github.io/AppSheetToolkit-Website/
+https://toolkit.krivyo.com/
 
 ## Included
 
-- Product landing page (tables, slices, and views)
+- Product landing page for Tables, Columns, Slices, Views, Actions, Automation Bots, and Complete App Snapshot
 - Product tour with five in-page visuals
 - Chrome and Edge install links
 - Feature, use-case, and workflow sections
 - Real product screenshot from the AppSheet editor
-- Roadmap and FAQ
+- v1.7.7 roadmap and FAQ
 - Privacy Policy
 - Support and feedback form
 - Custom 404 page
