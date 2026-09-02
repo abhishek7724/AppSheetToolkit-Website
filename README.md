@@ -8,12 +8,12 @@ https://toolkit.krivyo.com/
 
 ## Included
 
-- Product landing page for Tables, Columns, Slices, Views, Actions, Automation Bots, and Complete App Snapshot
+- Product landing page for Extract and Analyze workflows
 - Product tour with five in-page visuals
 - Chrome and Edge install links
-- Feature, use-case, and workflow sections
+- Feature, use-case, and workflow sections covering Snapshot Comparison, App Intelligence, App Health, and Technical Documentation
 - Real product screenshot from the AppSheet editor
-- v1.7.7 roadmap and FAQ
+- v1.9.1 roadmap and FAQ
 - Privacy Policy
 - Support and feedback form
 - Custom 404 page
@@ -33,8 +33,8 @@ assets/shots/   Product tour images (also used on the Chrome Web Store)
 
 ## Updating the product tour
 
-The five tour images live in `assets/shots/` as WebP at 1280x800. They match the
-Chrome Web Store screenshots, so replacing them keeps both surfaces consistent.
+The existing extraction tour images live in `assets/shots/` as WebP at 1280x800.
+They illustrate the extraction workflow; full-width Analyze tools are described separately on the landing page.
 Each slide is a `<figure class="tour-slide">` in `index.html`; add or remove a
 slide by adding or removing a matching `.tour-tab` button and `tour-panel-N` id.
 

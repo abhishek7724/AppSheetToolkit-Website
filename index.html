@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Extract AppSheet tables, columns, slices, views, actions, and automation bots. Create a Complete App Snapshot in JSON for documentation, analysis, troubleshooting, migration, and AI-assisted development. Private and processed locally in your browser.">
+  <meta name="description" content="Extract AppSheet configuration, compare snapshots, analyze impact and App Health, and generate technical documentation — processed locally in your browser.">
   <meta name="theme-color" content="#0b5ed7">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="AppSheet Toolkit — Understand and export your AppSheet app">
-  <meta property="og:description" content="Extract Tables, Slices, Views, Actions and Automation Bots — or create a Complete App Snapshot in one JSON file. AppSheet metadata stays on your computer.">
+  <meta property="og:title" content="AppSheet Toolkit — Extract, analyze and document your AppSheet app">
+  <meta property="og:description" content="Extract AppSheet configuration, compare snapshots, analyze dependencies and App Health, and generate technical documentation locally.">
   <meta property="og:image" content="https://toolkit.krivyo.com/assets/og-image.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -17,7 +17,7 @@
   <link rel="icon" href="assets/favicon.png" type="image/png">
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
-  <title>AppSheet Toolkit — Understand & Export AppSheet Metadata</title>
+  <title>AppSheet Toolkit — Extract, Analyze & Document AppSheet Apps</title>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -52,10 +52,10 @@
 
       <div class="shell hero-layout">
         <div class="hero-copy reveal">
-          <div class="availability"><span></span>v1.7.7 live on Chrome · Also available for Microsoft Edge</div>
+          <div class="availability"><span></span>v1.9.1 · Extract + Analyze · Also available for Microsoft Edge</div>
           <p class="eyebrow">Browser extension for AppSheet developers</p>
-          <h1>Understand your AppSheet app <em>in one snapshot.</em></h1>
-          <p class="lead">Extract tables, columns, slices, views, actions, and automation bots — or capture the complete application structure in one JSON snapshot for documentation, analysis, troubleshooting, migration, and AI-assisted development.</p>
+          <h1>Extract your AppSheet app. <em>Understand what it means.</em></h1>
+          <p class="lead">Capture supported AppSheet configuration in a Complete App Snapshot, then compare versions, explore dependencies and change impact, review App Health, and generate technical documentation — all locally in your browser.</p>
 
           <div class="store-buttons">
             <a class="store-button" href="https://chromewebstore.google.com/detail/appsheet-toolkit/mdbiahphbngmmjmggekiccggefpjablj?utm_source=item-share-cb" target="_blank" rel="noopener noreferrer">
@@ -92,28 +92,30 @@
 
     <section class="outcome-bar" aria-label="Product highlights">
       <div class="shell outcome-grid">
-        <div><strong>One click</strong><span>Complete App Snapshot</span></div>
-        <div><strong>Five layers</strong><span>Tables, slices, views, actions, bots</span></div>
-        <div><strong>Flexible export</strong><span>JSON, CSV, or both</span></div>
-        <div><strong>Private</strong><span>Files stay on your device</span></div>
+        <div><strong>Extract</strong><span>Structured AppSheet configuration</span></div>
+        <div><strong>Analyze</strong><span>Compare, impact and App Health</span></div>
+        <div><strong>Document</strong><span>HTML and Markdown technical docs</span></div>
+        <div><strong>Local first</strong><span>App metadata stays on your device</span></div>
       </div>
     </section>
 
     <section class="section" id="features">
       <div class="shell">
         <div class="section-heading centered reveal">
-          <p class="eyebrow">Built for AppSheet developers</p>
-          <h2>Less manual review. More usable metadata.</h2>
-          <p>Capture far more of your application structure without opening and documenting every configuration screen by hand.</p>
+          <p class="eyebrow">Two focused modes</p>
+          <h2>Extract what matters. Analyze what it means.</h2>
+          <p>Use Extract to capture supported AppSheet configuration. Use Analyze to compare, understand, review, and document the application from a Complete App Snapshot.</p>
         </div>
 
         <div class="feature-grid">
-          <article class="feature-card reveal"><div class="feature-icon">▦</div><h3>Tables and columns</h3><p>Extract every table with its columns and configuration, including formulas, validation, references, display settings, and more.</p></article>
-          <article class="feature-card reveal"><div class="feature-icon violet">◧</div><h3>Slices and views</h3><p>Capture slices, custom views, and system generated views with their available configuration and relationships.</p></article>
-          <article class="feature-card reveal"><div class="feature-icon green">⚡</div><h3>Actions <span class="tag-new">New</span></h3><p>Extract custom and system generated Actions, including supported action configuration and column assignments.</p></article>
-          <article class="feature-card reveal"><div class="feature-icon amber">◎</div><h3>Automation Bots <span class="tag-new">New</span></h3><p>Capture Bots, data-change and scheduled Events, Processes, and supported Tasks including email, Apps Script, and data actions.</p></article>
-          <article class="feature-card reveal"><div class="feature-icon">{ }</div><h3>Complete App Snapshot <span class="tag-new">New</span></h3><p>Bundle Tables, Slices, Views, Actions, and Bots into one structured JSON file for analysis, documentation, comparison, and AI workflows.</p></article>
-          <article class="feature-card reveal"><div class="feature-icon rose">◔</div><h3>Flexible export and control</h3><p>Choose JSON, CSV, or both for component exports, select what you need, follow live progress, and cancel safely without partial files.</p></article>
+          <article class="feature-card reveal"><div class="feature-icon">▦</div><h3>Tables and columns</h3><p>Extract table and column configuration including formulas, validation, references, display settings, and supported properties.</p></article>
+          <article class="feature-card reveal"><div class="feature-icon violet">◧</div><h3>Slices and views</h3><p>Capture Slices, custom Views, and supported System Generated Views with their available configuration.</p></article>
+          <article class="feature-card reveal"><div class="feature-icon green">⚡</div><h3>Actions and Automation</h3><p>Extract Actions, Bots, Events, Processes, and supported Tasks including email, Apps Script, and data actions.</p></article>
+          <article class="feature-card reveal"><div class="feature-icon">{ }</div><h3>Complete App Snapshot</h3><p>Create one structured JSON snapshot containing the supported application configuration for analysis, comparison, documentation, and handover.</p></article>
+          <article class="feature-card reveal"><div class="feature-icon teal">⇄</div><h3>Snapshot Comparison <span class="tag-new">New</span></h3><p>Compare two Complete App Snapshots and review added, removed, and changed configuration in a full-width workspace.</p></article>
+          <article class="feature-card reveal"><div class="feature-icon violet">◎</div><h3>App Intelligence <span class="tag-new">New</span></h3><p>Explore what a component uses, what uses it, and the discovered downstream impact before making a change.</p></article>
+          <article class="feature-card reveal"><div class="feature-icon amber">✓</div><h3>App Health <span class="tag-new">New</span></h3><p>Review unresolved references, maintainability signals, duplicate-like configuration, and other static review candidates.</p></article>
+          <article class="feature-card reveal"><div class="feature-icon rose">≡</div><h3>Technical Documentation <span class="tag-new">New</span></h3><p>Generate structured HTML and Markdown documentation covering the data model, configuration, automation, dependencies, and App Health findings.</p></article>
         </div>
       </div>
     </section>
@@ -122,8 +124,8 @@
       <div class="shell">
         <div class="section-heading centered reveal">
           <p class="eyebrow">A closer look</p>
-          <h2>The core workflow, at a glance.</h2>
-          <p>A quick visual tour of extraction, formats, control, and privacy.</p>
+          <h2>The extraction workflow, at a glance.</h2>
+          <p>A quick visual tour of the extraction workflow. Analysis tools open in dedicated full-width pages when you need more space.</p>
         </div>
 
         <div class="tour reveal" data-tour>
@@ -142,7 +144,7 @@
             </figure>
             <figure class="tour-slide" role="tabpanel" id="tour-panel-1" aria-labelledby="tour-tab-1" hidden>
               <img src="assets/shots/02-exports.webp" alt="AppSheet Toolkit component extraction workflow" width="1280" height="800" loading="lazy">
-              <figcaption>Tables, Slices and Views remain supported — v1.7.7 adds Actions, Automation Bots, and Complete App Snapshot.</figcaption>
+              <figcaption>Extract Tables, Columns, Slices, Views, Actions, Automation Bots, or create a Complete App Snapshot for the Analyze tools.</figcaption>
             </figure>
             <figure class="tour-slide" role="tabpanel" id="tour-panel-2" aria-labelledby="tour-tab-2" hidden>
               <img src="assets/shots/03-formats.webp" alt="Choose JSON, CSV or both and the files are saved to your Downloads folder" width="1280" height="800" loading="lazy">
@@ -165,26 +167,26 @@
       <div class="shell usecase-layout">
         <div class="section-heading reveal">
           <p class="eyebrow light">Why use it?</p>
-          <h2>Make AppSheet metadata useful beyond the editor.</h2>
-          <p>Use structured exports wherever manual screenshots and repeated configuration reviews slow down your work.</p>
+          <h2>Move from configuration export to application understanding.</h2>
+          <p>Turn AppSheet configuration into structured evidence you can review, compare, explain, and document without repeatedly opening every editor screen.</p>
         </div>
         <div class="usecase-list">
-          <article class="reveal"><span>01</span><div><h3>Documentation</h3><p>Create a reliable starting point for technical and project documentation.</p></div></article>
-          <article class="reveal"><span>02</span><div><h3>Application analysis</h3><p>Review formulas, slice conditions, view configuration, actions, and automation logic in structured output.</p></div></article>
-          <article class="reveal"><span>03</span><div><h3>Migration and handover</h3><p>Use a Complete App Snapshot as a structured starting point for handover, redevelopment, or migration planning.</p></div></article>
-          <article class="reveal"><span>04</span><div><h3>AI-assisted development</h3><p>Give AI tools structured context without manually copying every configuration.</p></div></article>
+          <article class="reveal"><span>01</span><div><h3>Change review</h3><p>Compare snapshots before and after a change to see exactly what was added, removed, or modified.</p></div></article>
+          <article class="reveal"><span>02</span><div><h3>Impact analysis</h3><p>Explore discovered dependencies and downstream usage before modifying a column, slice, view, action, or automation component.</p></div></article>
+          <article class="reveal"><span>03</span><div><h3>App Health and cleanup</h3><p>Surface review candidates and maintainability signals without pretending static analysis can replace developer judgment.</p></div></article>
+          <article class="reveal"><span>04</span><div><h3>Documentation and handover</h3><p>Generate technical documentation and keep a structured snapshot for troubleshooting, migration, and project handover.</p></div></article>
         </div>
       </div>
     </section>
 
     <section class="section" id="workflow">
       <div class="shell">
-        <div class="section-heading centered reveal"><p class="eyebrow">Simple workflow</p><h2>From AppSheet editor to export in four steps.</h2></div>
+        <div class="section-heading centered reveal"><p class="eyebrow">Simple workflow</p><h2>Extract first. Analyze when you need deeper answers.</h2></div>
         <div class="step-grid">
-          <article class="step-card reveal"><span>1</span><h3>Open your app</h3><p>Open the AppSheet application whose metadata you want to export, then open the toolkit side panel.</p></article>
-          <article class="step-card reveal"><span>2</span><h3>Choose what to export</h3><p>Select the components you need, or choose Complete App Snapshot to capture Tables, Slices, Views, Actions, and Bots together.</p></article>
-          <article class="step-card reveal"><span>3</span><h3>Choose a format</h3><p>Use JSON, CSV, or both for component exports. Complete App Snapshot is generated as one structured JSON file.</p></article>
-          <article class="step-card reveal"><span>4</span><h3>Use the output</h3><p>Use the files for documentation, review, troubleshooting, comparison, migration planning, or AI-assisted analysis.</p></article>
+          <article class="step-card reveal"><span>1</span><h3>Open your app</h3><p>Open the AppSheet application you want to inspect and launch AppSheet Toolkit in the side panel.</p></article>
+          <article class="step-card reveal"><span>2</span><h3>Extract configuration</h3><p>Select individual components or create a Complete App Snapshot containing the supported application structure.</p></article>
+          <article class="step-card reveal"><span>3</span><h3>Analyze locally</h3><p>Compare snapshots, explore App Intelligence, run App Health, or generate Technical Documentation from the snapshot.</p></article>
+          <article class="step-card reveal"><span>4</span><h3>Use the result</h3><p>Review changes, investigate impact, improve maintainability, document the app, or use the structured output in your wider workflow.</p></article>
         </div>
       </div>
     </section>
@@ -192,8 +194,8 @@
     <section class="section product-showcase">
       <div class="shell">
         <div class="showcase-heading reveal">
-          <div><p class="eyebrow">Works where you work</p><h2>Export directly from the AppSheet editor.</h2></div>
-          <p>Choose what to export, follow live progress, and download the result without leaving the application configuration screen.</p>
+          <div><p class="eyebrow">Works where you work</p><h2>Extract beside the AppSheet editor. Analyze in focused workspaces.</h2></div>
+          <p>The side panel stays compact for extraction and tool selection, while larger comparison, impact, health, and documentation results open in full-width pages.</p>
         </div>
         <figure class="showcase-frame reveal">
           <div class="showcase-topbar"><span></span><span></span><span></span><b>AppSheet Toolkit in action</b></div>
@@ -205,16 +207,16 @@
     <section class="section founder-section">
       <div class="shell founder-card reveal">
         <img src="assets/appsheet-toolkit-icon.png" alt="AppSheet Toolkit icon" width="116" height="116">
-        <div><p class="eyebrow">Built from a real developer pain point</p><h2>Built by an AppSheet developer, for AppSheet developers.</h2><p>AppSheet Toolkit started by removing the repetitive work of reviewing and copying metadata one screen at a time. It is now evolving toward a structured, reusable representation of an AppSheet application for documentation, analysis, troubleshooting, comparison, and AI-assisted development.</p></div>
+        <div><p class="eyebrow">Built from a real developer pain point</p><h2>Built by an AppSheet developer, for AppSheet developers.</h2><p>AppSheet Toolkit started by removing the repetitive work of reviewing and copying metadata one screen at a time. It has evolved into a local-first toolkit for extracting application configuration, comparing versions, understanding dependencies and impact, reviewing App Health, and generating technical documentation.</p></div>
       </div>
     </section>
 
     <section class="section" id="roadmap">
       <div class="shell roadmap-card reveal">
-        <div class="roadmap-copy"><p class="eyebrow">Product roadmap</p><h2>From metadata extraction to application intelligence.</h2><p>v1.7.7 expands the Toolkit across the major AppSheet configuration layers. The next phase focuses on using those snapshots to understand, compare, document, and improve applications.</p><a class="text-link" href="support.html">Share a feature request →</a></div>
+        <div class="roadmap-copy"><p class="eyebrow">Product roadmap</p><h2>From metadata extraction to application intelligence.</h2><p>v1.9.1 brings the core local analysis layer together: Extract, Compare, App Intelligence, App Health, and Technical Documentation. The next major direction is an optional AI layer built on top of this deterministic local foundation.</p><a class="text-link" href="support.html">Share a feature request →</a></div>
         <div class="roadmap-columns">
-          <div class="roadmap-column current"><span>Available now · v1.7.7</span><ul><li>Tables and Columns</li><li>Slices and Views, including System Generated Views</li><li>Actions, including System Generated Actions</li><li>Automation Bots, Events, Processes, and supported Tasks</li><li>Data-change and Scheduled Events</li><li>Complete App Snapshot in one JSON file</li><li>Selective JSON / CSV export, live progress, and safe cancellation</li></ul></div>
-          <div class="roadmap-column future"><span>Coming next</span><ul><li>Compare two AppSheet application snapshots</li><li>Dependency mapping across Tables, Views, Actions, and Bots</li><li>Unused or potentially redundant component detection</li><li>Generate clearer technical documentation from snapshots</li><li>AI-assisted AppSheet application analysis</li><li>Deeper expression exploration and impact analysis</li></ul></div>
+          <div class="roadmap-column current"><span>Available now · v1.9.1</span><ul><li>Tables, Columns, Slices, Views, Actions, and Automation extraction</li><li>Complete App Snapshot in structured JSON</li><li>Snapshot Comparison</li><li>App Intelligence dependency and impact analysis</li><li>App Health static review</li><li>Technical Documentation in HTML and Markdown</li><li>Clean Extract and Analyze side-panel modes</li><li>Local-first processing with no analytics or advertising trackers</li></ul></div>
+          <div class="roadmap-column future"><span>Exploring next</span><ul><li>Opt-in AI-assisted application analysis</li><li>Ask questions about a selected component or application flow</li><li>AI-assisted troubleshooting and explanation</li><li>Deeper expression exploration and reasoning</li><li>Use App Intelligence to send only relevant context when AI is enabled</li><li>Optional history and collaboration capabilities as real user demand develops</li></ul></div>
         </div>
       </div>
     </section>
@@ -222,7 +224,7 @@
     <section class="section privacy-block">
       <div class="shell privacy-card reveal">
         <div class="shield">✓</div>
-        <div><p class="eyebrow">Privacy first</p><h2>Your metadata remains on your computer.</h2><p>No advertising, analytics, tracking, user accounts, or external metadata storage. The extension only reads the AppSheet editor when you start an extraction.</p></div>
+        <div><p class="eyebrow">Privacy first</p><h2>Your AppSheet configuration stays local.</h2><p>AppSheet configuration is read only when you initiate Toolkit functionality and is processed locally in your browser. Extracted metadata and analysis results are not transmitted to the developer or third-party servers.</p></div>
         <a class="button button-secondary" href="privacy.html">Read Privacy Policy</a>
       </div>
     </section>
@@ -231,11 +233,13 @@
       <div class="shell faq-layout">
         <div class="section-heading reveal"><p class="eyebrow">FAQ</p><h2>Questions before installing?</h2><p>The essentials, without the fine print.</p></div>
         <div class="faq-list">
-          <details class="reveal"><summary>Does AppSheet Toolkit collect my data?</summary><p>No. The extension does not use analytics, tracking, or an external data-storage server.</p></details>
-          <details class="reveal"><summary>Can I extract Slices, Views, Actions, and Automation Bots too?</summary><p>Yes. v1.7.7 supports Tables and Columns, Slices, Views, Actions, and Automation Bots, including supported Events, Processes, and Tasks.</p></details>
-          <details class="reveal"><summary>What is Complete App Snapshot?</summary><p>It captures Tables, Columns, Slices, Views, Actions, and Bots together in a single structured JSON file so the application can be documented, compared, or analyzed as one configuration snapshot.</p></details>
-          <details class="reveal"><summary>Can I export JSON and CSV together?</summary><p>Yes for regular component exports. Complete App Snapshot is intentionally generated as one structured JSON file.</p></details>
-          <details class="reveal"><summary>What happens if I cancel halfway?</summary><p>Nothing is written. Files are only created once a full run completes, so a cancelled run never leaves a partial export behind.</p></details>
+          <details class="reveal"><summary>Does AppSheet Toolkit send my AppSheet configuration anywhere?</summary><p>No. AppSheet configuration is processed locally in your browser and is not transmitted to the developer or third-party servers.</p></details>
+          <details class="reveal"><summary>What can I extract?</summary><p>Toolkit supports Tables and Columns, Slices, Views, Actions, Automation Bots, Events, Processes, supported Tasks, and a Complete App Snapshot containing the supported configuration in one JSON file.</p></details>
+          <details class="reveal"><summary>What is the Analyze tab?</summary><p>Analyze contains Snapshot Comparison, App Intelligence, App Health, and Technical Documentation. These tools work from Complete App Snapshot files and run locally in your browser.</p></details>
+          <details class="reveal"><summary>What does App Intelligence do?</summary><p>It builds a static dependency model from the snapshot so you can explore what a component uses, what uses it, and discovered direct or downstream impact. It is an analysis aid, not a runtime guarantee.</p></details>
+          <details class="reveal"><summary>What does App Health do?</summary><p>App Health identifies static review candidates such as unresolved references, maintainability signals, duplicate-like configuration, and potentially unused components. Findings are intentionally presented for developer review rather than automatic deletion.</p></details>
+          <details class="reveal"><summary>Can Toolkit generate technical documentation?</summary><p>Yes. Technical Documentation can generate structured HTML and Markdown covering the application summary, data model, configuration, automation, dependencies, App Health findings, and an optional baseline comparison.</p></details>
+          <details class="reveal"><summary>Can I export JSON and CSV together?</summary><p>Yes for regular component exports. Complete App Snapshot is generated as structured JSON because it is also the input for the Analyze tools.</p></details>
           <details class="reveal"><summary>Is this an official Google product?</summary><p>No. AppSheet Toolkit is an independent third-party extension and is not affiliated with or endorsed by Google.</p></details>
         </div>
       </div>
@@ -244,7 +248,7 @@
     <section class="final-cta">
       <div class="cta-grid" aria-hidden="true"></div>
       <div class="shell final-cta-inner reveal">
-        <div><p class="eyebrow light">Free browser extension</p><h2>Stop documenting AppSheet apps by hand.</h2><p>Turn your AppSheet configuration into structured, reusable files — or capture the application in one Complete App Snapshot.</p></div>
+        <div><p class="eyebrow light">Free browser extension</p><h2>Extract, understand, and document your AppSheet app.</h2><p>Create a Complete App Snapshot, compare versions, explore impact, review App Health, and generate technical documentation without sending application metadata to an external analysis service.</p></div>
         <div class="cta-actions"><a class="button button-light" href="https://chromewebstore.google.com/detail/appsheet-toolkit/mdbiahphbngmmjmggekiccggefpjablj?utm_source=item-share-cb" target="_blank" rel="noopener noreferrer">Install for Chrome</a><a class="button button-outline" href="support.html">Support & Feedback</a></div>
       </div>
     </section>
@@ -252,7 +256,7 @@
 
   <footer class="footer">
     <div class="shell footer-main">
-      <div class="footer-brand"><a class="brand" href="index.html"><img src="assets/appsheet-toolkit-icon.png" alt="" width="42" height="42"><span>AppSheet Toolkit</span></a><p>A developer toolkit for extracting and understanding AppSheet application structure.</p><small>Built by Abhishek Sinha</small></div>
+      <div class="footer-brand"><a class="brand" href="index.html"><img src="assets/appsheet-toolkit-icon.png" alt="" width="42" height="42"><span>AppSheet Toolkit</span></a><p>A local-first developer toolkit for extracting, analyzing, and documenting AppSheet application configuration.</p><small>Built by Abhishek Sinha</small></div>
       <div class="footer-links"><div><strong>Product</strong><a href="#features">Features</a><a href="#tour">Tour</a><a href="#workflow">How it works</a><a href="#roadmap">Roadmap</a></div><div><strong>Resources</strong><a href="support.html">Support & Feedback</a><a href="privacy.html">Privacy Policy</a></div><div><strong>Install</strong><a href="https://chromewebstore.google.com/detail/appsheet-toolkit/mdbiahphbngmmjmggekiccggefpjablj?utm_source=item-share-cb" target="_blank" rel="noopener noreferrer">Chrome Web Store</a><a href="https://microsoftedge.microsoft.com/addons/search/AppSheet%20Toolkit" target="_blank" rel="noopener noreferrer">Microsoft Edge</a></div></div>
     </div>
     <div class="shell footer-bottom"><p>© 2026 Abhishek Sinha. All rights reserved.</p><p>AppSheet Toolkit is independent and is not affiliated with or endorsed by Google.</p></div>
