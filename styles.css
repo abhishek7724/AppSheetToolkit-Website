@@ -51,3 +51,13 @@
 .testimonials-section a:focus-visible{outline:3px solid var(--blue-dark);outline-offset:5px;border-radius:4px}
 @media(max-width:1040px){.testimonial-grid{grid-template-columns:1fr}.testimonial-card{padding:28px}.testimonial-card blockquote{margin-bottom:24px}}
 @media(max-width:640px){.testimonials-section{padding-top:12px}.testimonial-card{padding:24px}.testimonials-footer{align-items:stretch;flex-direction:column;gap:18px}}
+
+/* Version 2.0.0 release announcement */
+.availability{text-decoration:none;flex-wrap:wrap}.availability>span{flex-shrink:0}.availability b{font-size:16px}.availability:focus-visible{outline:3px solid var(--blue);outline-offset:4px}
+.release-section{padding:48px 0 0;scroll-margin-top:100px}
+.release-card{display:grid;grid-template-columns:64px minmax(0,1fr) auto;gap:28px;align-items:center;padding:34px;border:1px solid #bdd4f7;border-radius:24px;background:linear-gradient(120deg,#fff,#edf5ff);box-shadow:var(--shadow-sm)}
+.release-icon{width:64px;height:64px;display:grid;place-items:center;border-radius:18px;background:#fff3d6;font-size:32px}
+.release-copy .eyebrow{margin-bottom:8px}.release-copy h2{margin:0;color:var(--navy);font-size:clamp(25px,3vw,34px);line-height:1.15;letter-spacing:-.025em}
+.release-copy>p:not(.eyebrow){max-width:680px;margin:12px 0 0;color:var(--muted)}.release-copy .release-note{font-size:14px}.release-card>.button{gap:5px;white-space:nowrap}
+@media(max-width:1040px){.release-card{grid-template-columns:64px minmax(0,1fr)}.release-card>.button{grid-column:2;justify-self:start}}
+@media(max-width:640px){.release-section{padding-top:28px}.release-card{grid-template-columns:1fr;padding:25px;gap:18px}.release-icon{width:50px;height:50px;border-radius:14px;font-size:26px}.release-card>.button{grid-column:auto;justify-self:stretch}.availability{font-size:12px}}
