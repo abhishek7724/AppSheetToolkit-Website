@@ -66,15 +66,15 @@ https://chromewebstore.google.com/detail/appsheet-toolkit/mdbiahphbngmmjmggekicc
 When editing, preserve the reviewer's wording and attribution. Confirm any new
 excerpt on the store before updating it; never invent individual review IDs.
 
-## Staging status
+## Publishing
 
-This change is prepared on `feature/selected-user-testimonials` for review only.
-Inspection found only `main` and `backup-old-main` on the remote, the generated
-GitHub Pages build workflow, and one `github-pages` environment with deployments
-from `main`. No separate staging target or preview deployment was verified.
+The production website is served by GitHub Pages from `main` at
+https://toolkit.krivyo.com/. There is no build step. Before publishing, check
+desktop/mobile layout, keyboard focus, links, and the mocked form tests.
+The feature form must be live before the extension feedback link is released.
 
-Do not deploy this branch to the existing GitHub Pages environment or change the
-production domain, canonical links, sitemap, or hosting settings. Use the local
-preview above until a separate staging target and its branch mapping are verified.
-There is no build step: preview the static files and check desktop/mobile layout,
-keyboard focus, quote attribution, and all four reviews links before release.
+## Feature ideas and collaboration
+
+`feature-request.html` collects a name, email, feature idea, and optional collaboration interest. It reuses the existing support API contract; collaboration is included explicitly in the stored message, so no backend schema change is assumed. Nothing is sent until the visitor submits. Tests intercept requests locally rather than creating real support tickets.
+
+The extension campaign runs from 17 October 2026 08:12:12 UTC until 16 November 2026 08:12:12 UTC. The page stays usable afterward; the extension returns to its review prompt. Publish the website page before releasing the extension link. The campaign adds a static page and reuses the existing support service; the production domain, sitemap, and hosting configuration are unchanged.

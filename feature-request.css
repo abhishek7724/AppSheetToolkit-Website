@@ -1,0 +1,22 @@
+.feature-request-card{display:grid;grid-template-columns:minmax(0,.7fr) minmax(0,1.3fr);gap:48px;padding:40px;border:1px solid var(--line);border-radius:24px;background:#fff;box-shadow:var(--shadow-sm)}
+.feature-request-intro h2{margin:0;font-size:28px;line-height:1.2;letter-spacing:-.025em}
+.feature-request-intro p{color:var(--muted);margin:16px 0 0}
+.feature-request-form{display:grid;gap:22px;min-width:0}
+.feature-request-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.feature-request-form label{display:grid;gap:8px;color:var(--navy);font-size:14px;font-weight:700}
+.feature-request-form label strong{color:#c5221f}
+.feature-request-form input:not([type=checkbox]),.feature-request-form textarea{width:100%;padding:13px 14px;border:1px solid #cdd9e9;border-radius:10px;background:#fff;color:#172033;font:inherit;font-weight:400}
+.feature-request-form textarea{resize:vertical;min-height:170px}
+.feature-request-form input:focus-visible,.feature-request-form textarea:focus-visible{outline:3px solid #b9d6ff;outline-offset:2px}
+.feature-request-form .collaboration-option{display:flex;align-items:flex-start;gap:12px;padding:18px;border:1px solid #d5e2f5;border-radius:12px;background:#f4f8ff;cursor:pointer}
+.collaboration-option input{width:18px;height:18px;margin:3px 0 0;accent-color:#0b5ed7;flex-shrink:0}
+.collaboration-option small{display:block;margin-top:5px;font-size:13px;line-height:1.5;color:var(--muted);font-weight:400}
+.feature-request-privacy{margin:0;color:var(--muted);font-size:13px;line-height:1.6}
+.feature-request-privacy a{color:var(--blue)}
+.feature-request-footer{display:flex;align-items:center;flex-wrap:wrap;gap:16px}
+.feature-request-footer button{cursor:pointer;font:inherit;min-width:160px}
+.feature-request-footer button:disabled{opacity:.65;cursor:wait}
+.feature-request-status{margin:0;flex:1;font-size:14px;overflow-wrap:anywhere}
+.feature-request-status.success{color:#188038}.feature-request-status.error{color:#b3261e}
+@media(max-width:850px){.feature-request-card{grid-template-columns:1fr;gap:30px;padding:30px}}
+@media(max-width:560px){.feature-request-card{padding:24px 18px}.feature-request-grid{grid-template-columns:1fr}.feature-request-footer{align-items:stretch;flex-direction:column}}
